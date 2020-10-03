@@ -39,7 +39,7 @@ class VersionCheckerTest : FunSpec({
             it.mockHttpResponse(200, sampleMessage)
 
             // act
-            val version = sut.getCurrentVersion()
+            val version=sut.getCurrentVersion( )
 
             // assert
             version shouldBeRight Version(mockVersion, null)
